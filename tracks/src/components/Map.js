@@ -9,14 +9,14 @@ const Map = () => {
         locations } 
     } = useContext(LocationContext)
 
-    console.log(currentLocation)
+    // console.log(currentLocation)
 
     if (!currentLocation) {
         return <ActivityIndicator size="large" style={{ marginTop: 200 }} />
     }
     initialLocation = {
-        longitude: -122.0312186,
-        latitude: 37.33233141,
+        longitude: -122.406417,
+        latitude: 37.785834,
     };
     return <MapView
         style={styles.map}
